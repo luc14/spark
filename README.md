@@ -1,7 +1,7 @@
 # spark
 I worked with Python generators, Python pandas and Apache Spark recently. I’m happy to share some experience I’ve got. The generator idea comes from [David Beazley’s website](http://www.dabeaz.com/generators/).
 
-I’m going to use a web log from [kdnuggets web mining course](https://web.archive.org/web/20161103225146/http://www.kdnuggets.com:80/web_mining_course/) as an example. And I will explain some differences when using the three approaches.
+I’m going to use a web log from [kdnuggets web mining course](http://www.kdnuggets.com:80/web_mining_course/) as an example. And I will explain some differences when using the three approaches.
 
 1. The original data needs to fit into RAM with pandas dataframes but not with generators and Spark. Generators take only one line from a file each time and save the result somewhere after processing the data. Spark dataframes work in a similar way but much more complicated.
 
